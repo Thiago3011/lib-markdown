@@ -1,17 +1,28 @@
 {
-  "name": "lib-markdown",
+  "name": "lib-markdown-ths",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lib criada para validação de links",
+  "main": "./cli.js",
+  "bin": {
+    "lib-markdown-ths": "./cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./test",
     "cli": "node cli.js ./arquivos/texto1.md"
   },
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/Thiago3011?tab=repositories",
+  "bugs": {
+    "email": "thiago.silva1001@outlook.com"
+  },
+  "author": "Thiago Silva <thiago.silva1001@outlook.com>",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
   }
 }
